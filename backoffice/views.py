@@ -1,6 +1,13 @@
 # -*- coding: utf-8 -*-
-from __future__ import unicode_literals
+from django.http import HttpResponse
 
 from django.shortcuts import render
 
-# Create your views here.
+
+def home(request):
+
+    """ Exemple de page HTML, non valide pour que l'exemple soit concis """
+
+    text = """<h1>WOLOLOLOLOLO !!</h1>"""
+
+    return HttpResponse(text)
